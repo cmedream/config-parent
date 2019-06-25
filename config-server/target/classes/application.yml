@@ -1,0 +1,23 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          uri: https://github.com/cmedream/SpringcloudConfig/
+          searchPaths: respo
+          username:
+          password:
+
+
+#  spring.cloud.config.server.git.uri������git�ֿ��ַ
+#  spring.cloud.config.server.git.searchPaths�����òֿ�·��
+#  spring.cloud.config.label�����òֿ�ķ�֧
+#  spring.cloud.config.server.git.username������git�ֿ���û���
+#  spring.cloud.config.server.git.password������git�ֿ���û�����
+#  ���Git�ֿ�Ϊ�����ֿ⣬���Բ���д�û��������룬�����˽�вֿ���Ҫ��д
